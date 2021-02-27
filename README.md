@@ -33,7 +33,17 @@ func SumOfUInt32(v1, v2 uint32) uint32 {
 }
 
 ```
-As you can notice that the code provide in the template file `sample.ct`, is parsed and processed by substituting the Suffix by the first argument from the entries in the template range attribute and by substituting Type with the second argument.
+As you can notice, that the code provided in the template file `sample.ct`, is parsed and processed by substituting the Suffix by the first argument from the entries in the template range attribute and by substituting Type with the second argument.
 This specially helpful for programming languages where built in generics/templates are not supported yet.
 
 Even if the programming language provides the generic data handling through reflections, still this type of generated code is always better and efficient over the reflections.
+
+You can define more than one template in the same file.
+A template starts with the `template` tag and contains following attributes:
+- class
+- range
+
+<b>class</b> attribute contains the comma seperated tokens which needs to be substituted with values when template code is processed.
+<b>range</b> attribute contains the values that need to be substituted in template for each token metioned in the class. The values should be grouped within the `(` and `)`. More than one such group can be provided. In such cases when more than one value group is provided, the template body will be processed for each value group mentioned in the range attribute.
+
+For example
