@@ -1,0 +1,7 @@
+<template class="Suffix,Type" range="(Int,int) (Int32,int32) (UInt32,uint32)">
+// SumOfSuffix is a method which adds two Type and returns their sum.
+func SumOfSuffix(v1, v2 Type) Type {
+
+}
+
+</template>
