@@ -46,4 +46,3 @@ A template starts with the `template` tag and contains following attributes:
 <b>class</b> attribute contains the comma seperated tokens which needs to be substituted with values when template code is processed.
 <b>range</b> attribute contains the values that need to be substituted in template for each token metioned in the class. The values should be grouped within the `(` and `)`. More than one such group can be provided. In such cases when more than one value group is provided, the template body will be processed for each value group mentioned in the range attribute.
 
-For example
