@@ -6,7 +6,7 @@ Here is a sample code template file (`sample.ct`)
 <template class="Suffix,Type" range="(Int,int) (Int32,int32) (UInt32,uint32)">
 // SumOfSuffix is a method which adds two Type and returns their sum.
 func SumOfSuffix(v1, v2 Type) Type {
-
+    return v1 + v2
 }
 
 </template>
@@ -19,17 +19,17 @@ Then following code will be generated.
 $ python ct.py sample.ct 
 // SumOfInt is a method which adds two int and returns their sum.
 func SumOfInt(v1, v2 int) int {
-
+    return v1 + v2
 }
 
 // SumOfInt32 is a method which adds two int32 and returns their sum.
 func SumOfInt32(v1, v2 int32) int32 {
-
+    return v1 + v2
 }
 
 // SumOfUInt32 is a method which adds two uint32 and returns their sum.
 func SumOfUInt32(v1, v2 uint32) uint32 {
-
+    return v1 + v2
 }
 
 ```
