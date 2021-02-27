@@ -33,7 +33,7 @@ func SumOfUInt32(v1, v2 uint32) uint32 {
 }
 
 ```
-As you can notice, that the code provided in the template file `sample.ct`, is parsed and processed by substituting the Suffix by the first argument from the entries in the template range attribute and by substituting Type with the second argument.
+As you can notice, that the code provided in the template file `sample.ct`, is parsed and processed by substituting the `Suffix` by the first argument from the entries in the template range attribute and by substituting `Type` with the second argument.
 This specially helpful for programming languages where built in generics/templates are not supported yet.
 
 Even if the programming language provides the generic data handling through reflections, still this type of generated code is always better and efficient over the reflections.
